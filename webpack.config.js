@@ -6,7 +6,7 @@ var path = require('path');
 module.exports = {
   debug: true,
   devtool: '#eval-source-map',
-  context: path.join(__dirname, 'app', 'js'),
+    context: path.join(__dirname, 'app', 'src', 'js', 'reactapp'),
 
   entry: [
     'webpack/hot/dev-server',
@@ -15,7 +15,7 @@ module.exports = {
   ],
 
   output: {
-    path: path.join(__dirname, 'app', 'js'),
+    path: path.join(__dirname, 'app', 'dist', 'js'),
     publicPath: '/js/',
     filename: 'bundle.js'
   },
