@@ -1,31 +1,32 @@
 {
-  "name": "webpack.react-hot-loader",
+  "name": "react_base_set_up",
   "version": "1.0.0",
-  "description": "Webpack + React Hot Loader",
+  "description": "React base setup with webpack,gulp,react hot loader, browserify playing nice",
   "main": "app.js",
-  "author": "Sergey Slipchenko <faergeek@gmail.com>",
+  "author": "Kevin Macharia <kevnmacharia@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "build": "./node_modules/webpack/bin/webpack.js -p"
   },
   "dependencies": {
-    "babel-core": "^6.21.0",
-    "babel-loader": "^6.2.10",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.16.0",
-    "browser-sync": "^2.8.0",
     "react": "^15.4.1",
-    "react-dom": "^15.4.1",
-    "react-hot-loader": "^1.2.8",
-    "webpack": "^1.10.5",
-    "webpack-dev-middleware": "^1.2.0",
-    "webpack-hot-middleware": "^2.13.2"
+    "react-dom": "^15.4.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-load-plugins": "^1.5.0",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^2.0.1"
+    "gulp-uglify": "^2.0.1",
+    "webpack": "^1.10.5",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.13.2",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.16.0",
+    "browser-sync": "^2.8.0",
+    "react-hot-loader": "^1.2.8"  
   }
 }

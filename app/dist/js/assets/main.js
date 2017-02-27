@@ -1,1 +1,1 @@
-console.log("Kevin Macharia");
+console.log("Some logged message");

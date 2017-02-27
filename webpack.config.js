@@ -3,6 +3,14 @@
 var webpack = require('webpack');
 var path = require('path');
 
+function getDevTool() {
+    if (process.env.NODE_ENV !== 'production') {
+        return 'source-map'; //enables source map
+    }
+    
+    return false; 
+}
+
 module.exports = {
   debug: true,
   devtool: '#eval-source-map',
@@ -19,7 +27,7 @@ module.exports = {
     publicPath: '/js/',
     filename: 'bundle.js'
   },
-
+  devtool: getDevTool(),
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
