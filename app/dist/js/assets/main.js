@@ -1,1 +1,1 @@
-console.log("Some logged message");
+"use strict";function add(e,d){return e+d}var der="\n\tThis is something me bredda\n";console.log(der),console.log(add(3,4));var adder=function(e,d){return e+d};console.log(adder(4,5));

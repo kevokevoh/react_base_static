@@ -7,7 +7,7 @@ export default class HelloWorld extends Component {
 
     return (
       <h2 className="hello-world">
-        <span className="hello-world__i">Hello, {name}</span>
+        <span className="hello-world__i">Hey, {name}</span>
       </h2>
     );
   }
