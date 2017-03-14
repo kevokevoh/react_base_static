@@ -30,7 +30,12 @@ To use webpack dev server & watch in one tab,
 and in another tab start gulp
 
 ```bash
-    $ gulp watch
+    $ gulp
 ```
 
-Listen to configured tab by browsersync
+### Additional Info:
+
+To see `react-hot-loader` in action, edit `app/src/js/reactapp/HelloWorld.jsx`
+
+Cheers
+
